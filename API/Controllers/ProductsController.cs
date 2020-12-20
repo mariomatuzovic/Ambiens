@@ -1,10 +1,12 @@
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Infrastructure.Data;
 using Core.Entities;
-using Microsoft.EntityFrameworkCore;
+using Core.Interfaces;
+using Core.Specifications;
+using API.DataTransferObjects;
+using System.Linq;
+using AutoMapper;
 
 namespace API.Controllers
 {
@@ -12,33 +14,90 @@ namespace API.Controllers
   [Route("api/[controller]")]
   public class ProductsController : ControllerBase
   {
-    private readonly StoreContext _context;
-    // We need to inject StoreContext into our ProductsController and by doing that we will get access to the methods in the class
-    // When we inject smth into controllers or any class then it is given a lifetime
-    // When a request comes in it hits our ProductsController then a new instance of ProductsController is goona be created and when it is created it is going to see what it's dependecies are (in this case the dependency on the StoreContext) and that will create a new instance of the StoreContext that we can work with 
-    // ASP.NET Core controls the lifetime of how long this StoreContext is available
-    // When we added StoreContext inside Startup class it is given a very specific lifetime
-    // If we hoover over AddDbContext we can see that its ServiceLifetime is equal to Scoped(means it is available for the lifetime of the HTTP request) - so this StoreContext will be available for the entirety of that single HTTP request. Once the request is finished the StoreContext is disposed and released from memory
-    public ProductsController(StoreContext context)
+    private readonly IGenericRepository<Product> _productsRepo;
+    private readonly IGenericRepository<ProductBrand> _productBrandRepo;
+    private readonly IGenericRepository<ProductType> _productTypeRepo;
+    private readonly IMapper _mapper;
+
+    // private readonly IProductRepository _repo;
+
+    // public ProductsController(IProductRepository repo)
+    // {
+    //   _repo = repo;
+    // }
+
+    // We replaced the single easy to use repository above with 3 repositories
+    public ProductsController(IGenericRepository<Product> productsRepo, IGenericRepository<ProductBrand> productBrandRepo, IGenericRepository<ProductType> productTypeRepo, IMapper mapper)
     {
-      _context = context;
+      _mapper = mapper;
+      _productsRepo = productsRepo;
+      _productBrandRepo = productBrandRepo;
+      _productTypeRepo = productTypeRepo;
     }
 
-    // We are returning an ActionResult from controller below - some kind of HTTP response status like 200, 404, etc
-    // Instead of doing it synchronously and waiting for the list to come back we are creating a Task that will pass our request to a delegate which will query the database. It will not wait and block the thread until the Task is completed. Once the request has completed the delegate has completed its Task and notifies our method here to carry on. 
     [HttpGet]
-    public async Task<ActionResult<List<Product>>> GetProducts()
+    public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts()
     {
-      // To list is an LINQ extension method so when we call ToList it will execute a query on the db and return the results and store in the variable products
-      var products = await _context.Products.ToListAsync();
+      var spec = new ProductsWithTypesAndBrandsSpecification();
 
-      return Ok(products);
+      // var products = await _repo.GetProductsAsync();
+      // var products = await _productsRepo.ListAllAsync();
+      var products = await _productsRepo.ListAsync(spec);
+
+      // ToList method below is not running against the db, we have got our products in memory at this point, we are selecting them in memory and then returning it to a list in memory 
+      // It would be more efficient to do this in the specification rather then bringing the products back to our controller and then doing this inside our ProductController but this is simpler
+      // There is a popular utility that is going to automate the mapping for us between our entities and dtos - AutoMapper
+      // return products.Select(product => new ProductToReturnDto
+      // {
+      //   Id = product.Id,
+      //   Name = product.Name,
+      //   Description = product.Description,
+      //   PictureUrl = product.PictureUrl,
+      //   Price = product.Price,
+      //   ProductBrand = product.ProductBrand.Name,
+      //   ProductType = product.ProductType.Name
+      // }).ToList();
+
+      // We changed List to IReadOnlyList above so we wrapped it into Ok
+      return Ok(_mapper
+        .Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products));
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<Product>> GetProduct(int id)
+    public async Task<ActionResult<ProductToReturnDto>> GetProduct(int id)
     {
-      return await _context.Products.FindAsync(id);
+      var spec = new ProductsWithTypesAndBrandsSpecification(id);
+
+      // return await _repo.GetProductByIdAsync(id);
+      // return await _productsRepo.GetByIdAsync(id);
+      var product = await _productsRepo.GetEntityWithSpec(spec);
+
+      // return new ProductToReturnDto
+      // {
+      //   Id = product.Id,
+      //   Name = product.Name,
+      //   Description = product.Description,
+      //   PictureUrl = product.PictureUrl,
+      //   Price = product.Price,
+      //   ProductBrand = product.ProductBrand.Name,
+      //   ProductType = product.ProductType.Name
+      // };
+
+      return _mapper.Map<Product, ProductToReturnDto>(product);
+    }
+
+    [HttpGet("brands")]
+    public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetProductBrands(int id)
+    {
+      // return Ok(await _repo.GetProductBrandsAsync());
+      return Ok(await _productBrandRepo.ListAllAsync());
+    }
+
+    [HttpGet("types")]
+    public async Task<ActionResult<IReadOnlyList<ProductType>>> GetProductTypes(int id)
+    {
+      // return Ok(await _repo.GetProductTypesAsync());
+      return Ok(await _productTypeRepo.ListAllAsync());
     }
   }
 }
