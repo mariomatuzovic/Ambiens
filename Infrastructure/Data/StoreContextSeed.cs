@@ -45,7 +45,6 @@ namespace Infrastructure.Data
 
         if (!context.Products.Any())
         {
-
           var productsData = File.ReadAllText("../Infrastructure/Data/SeedData/products.json");
 
           var products = JsonSerializer.Deserialize<List<Product>>(productsData);
@@ -61,6 +60,7 @@ namespace Infrastructure.Data
       catch (System.Exception ex)
       {
         var logger = loggerFactory.CreateLogger<StoreContextSeed>();
+
         logger.LogError(ex.Message);
       }
     }

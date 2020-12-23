@@ -1,13 +1,13 @@
+using API.Extensions;
 using API.Helpers;
+using API.Middleware;
 using AutoMapper;
-using Core.Interfaces;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 
 namespace API
 {
@@ -19,36 +19,47 @@ namespace API
     {
       _configuration = configuration;
     }
+
     public void ConfigureServices(IServiceCollection services)
     {
-      // Ordering of services is not important
-      services.AddScoped<IProductRepository, ProductRepository>();
-      // Below we added GenericRepository to the service container so that we can inject list whenever we need it in our app 
-      // We use typeof because we do not know the types that we are going to be using with this repository, not unit compile time
-      services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
-      // We need to add AutoMapper as a service and specify the location(the assembly where we've created our MappingProfile class) of where our mapping profiles are located 
       services.AddAutoMapper(typeof(MappingProfiles));
+
       services.AddControllers();
+
       services.AddDbContext<StoreContext>(x =>
-        x.UseSqlite(_configuration.GetConnectionString("DefaultConnection")));
+        x.UseSqlite(_configuration.GetConnectionString("DefaultConnection"))
+      );
+
+      services.AddApplicationServices();
+
+      services.AddSwaggerDocumentation();
+
+      services.AddCors(opt =>
+      {
+        opt.AddPolicy("CorsPolicy", policy =>
+        {
+          policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200");
+        });
+      });
     }
+
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
-      if (env.IsDevelopment())
-      {
-        app.UseDeveloperExceptionPage();
-      }
+      app.UseMiddleware<ExceptionMiddleware>();
 
-      // Ordering of middlewares is important
+      app.UseStatusCodePagesWithReExecute("/errors/{0}");
+
       app.UseHttpsRedirection();
 
       app.UseRouting();
 
-      // We need to configure our API server to serve static content
-      // We added this as middleware just underneath app.UseRouting
       app.UseStaticFiles();
 
+      app.UseCors("CorsPolicy");
+
       app.UseAuthorization();
+
+      app.UseSwaggerDocumentation();
 
       app.UseEndpoints(endpoints =>
       {
