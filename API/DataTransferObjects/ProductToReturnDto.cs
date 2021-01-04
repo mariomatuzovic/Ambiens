@@ -8,6 +8,6 @@ namespace API.DataTransferObjects
     public decimal Price { get; set; }
     public string PictureUrl { get; set; }
     public string ProductType { get; set; }
-    public string ProductBrand { get; set; }
+    public string ProductColor { get; set; }
   }
 }

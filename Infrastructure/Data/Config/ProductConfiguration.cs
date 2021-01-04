@@ -14,7 +14,7 @@ namespace Infrastructure.Data.Config
       builder.Property(p => p.Price).HasColumnType("decimal(18,2)");
       builder.Property(p => p.PictureUrl).IsRequired();
       // Bottom 2 not necessary bcz EF does that already
-      builder.HasOne(b => b.ProductBrand).WithMany().HasForeignKey(p => p.ProductBrandId);
+      builder.HasOne(b => b.ProductColor).WithMany().HasForeignKey(p => p.ProductColorId);
       builder.HasOne(b => b.ProductType).WithMany().HasForeignKey(p => p.ProductTypeId);
     }
   }

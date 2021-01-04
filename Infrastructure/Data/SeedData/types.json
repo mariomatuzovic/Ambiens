@@ -1,18 +1,30 @@
 [
   {
     "Id": 1,
-    "Name": "Boards"
+    "Name": "Flower pots & planters"
   },
   {
     "Id": 2,
-    "Name": "Hats"
+    "Name": "Candles & lanterns"
   },
   {
     "Id": 3,
-    "Name": "Boots"
+    "Name": "Frames & pictures"
   },
   {
     "Id": 4,
-    "Name": "Gloves"
+    "Name": "Mirrors"
+  },
+  {
+    "Id": 5,
+    "Name": "Vases & bowls"
+  },
+  {
+    "Id": 6,
+    "Name": "Clocks"
+  },
+  {
+    "Id": 7,
+    "Name": "Decorative accessories"
   }
 ]

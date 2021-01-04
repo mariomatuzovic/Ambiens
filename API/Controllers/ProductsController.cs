@@ -15,20 +15,20 @@ namespace API.Controllers
   public class ProductsController : BaseApiController
   {
     private readonly IGenericRepository<Product> _productsRepo;
-    private readonly IGenericRepository<ProductBrand> _productBrandRepo;
+    private readonly IGenericRepository<ProductColor> _productColorRepo;
     private readonly IGenericRepository<ProductType> _productTypeRepo;
     private readonly IMapper _mapper;
 
     public ProductsController(
       IGenericRepository<Product> productsRepo,
-      IGenericRepository<ProductBrand> productBrandRepo,
+      IGenericRepository<ProductColor> productColorRepo,
       IGenericRepository<ProductType> productTypeRepo,
       IMapper mapper
     )
     {
       _mapper = mapper;
       _productsRepo = productsRepo;
-      _productBrandRepo = productBrandRepo;
+      _productColorRepo = productColorRepo;
       _productTypeRepo = productTypeRepo;
     }
 
@@ -37,7 +37,7 @@ namespace API.Controllers
       [FromQuery] ProductSpecParams productParams
     )
     {
-      var spec = new ProductsWithTypesAndBrandsSpecification(productParams);
+      var spec = new ProductsWithTypesAndColorsSpecification(productParams);
 
       var countSpec = new ProductWithFiltersForCountSpecification(productParams);
 
@@ -61,7 +61,7 @@ namespace API.Controllers
     [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
     public async Task<ActionResult<ProductToReturnDto>> GetProduct(int id)
     {
-      var spec = new ProductsWithTypesAndBrandsSpecification(id);
+      var spec = new ProductsWithTypesAndColorsSpecification(id);
 
       var product = await _productsRepo.GetEntityWithSpec(spec);
 
@@ -71,10 +71,10 @@ namespace API.Controllers
       return _mapper.Map<Product, ProductToReturnDto>(product);
     }
 
-    [HttpGet("brands")]
-    public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetProductBrands(int id)
+    [HttpGet("colors")]
+    public async Task<ActionResult<IReadOnlyList<ProductColor>>> GetProductColors(int id)
     {
-      return Ok(await _productBrandRepo.ListAllAsync());
+      return Ok(await _productColorRepo.ListAllAsync());
     }
 
     [HttpGet("types")]

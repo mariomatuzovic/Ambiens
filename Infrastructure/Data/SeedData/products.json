@@ -1,146 +1,523 @@
 [
   {
-    "Name": "Angular Speedster Board 2000",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 200,
-    "PictureUrl": "images/products/sb-ang1.png",
+    "Name": "MUSKOT",
+    "Description": "Plant pot, white, 9 cm",
+    "Price": 1.50,
+    "PictureUrl": "images/products/muskot-plant-pot-white__0899378_PE697482_S5.webp",
     "ProductTypeId": 1,
-    "ProductBrandId": 1
+    "ProductColorId": 2
   },
   {
-    "Name": "Green Angular Board 3000",
-    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
-    "Price": 150,
-    "PictureUrl": "images/products/sb-ang2.png",
+    "Name": "BOYSENBÄR",
+    "Description": "Plant pot, in/outdoor light grey, 12 cm",
+    "Price": 4.00,
+    "PictureUrl": "images/products/boysenbaer-plant-pot-in-outdoor-light-grey__0900133_PE717648_S5.webp",
     "ProductTypeId": 1,
-    "ProductBrandId": 1
+    "ProductColorId": 1
   },
   {
-    "Name": "Core Board Speed Rush 3",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 180,
-    "PictureUrl": "images/products/sb-core1.png",
+    "Name": "INGEFÄRA",
+    "Description": "Plant pot with saucer, outdoor/terracotta, 12 cm",
+    "Price": 2.50,
+    "PictureUrl": "images/products/ingefaera-plant-pot-with-saucer-outdoor-terracotta__0899062_PE708503_S5.webp",
     "ProductTypeId": 1,
-    "ProductBrandId": 2
+    "ProductColorId": 4
   },
   {
-    "Name": "Net Core Super Board",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 300,
-    "PictureUrl": "images/products/sb-core2.png",
+    "Name": "NYPON",
+    "Description": "Plant pot, in/outdoor grey, 12 cm",
+    "Price": 2.00,
+    "PictureUrl": "images/products/nypon-plant-pot-in-outdoor-grey__0901261_PE727654_S5.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 2
+    "ProductColorId": 1
   },
   {
-    "Name": "React Board Super Whizzy Fast",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 250,
-    "PictureUrl": "images/products/sb-react1.png",
+    "Name": "GRADVIS",
+    "Description": "Plant pot, pink, 12 cm",
+    "Price": 4.00,
+    "PictureUrl": "images/products/gradvis-plant-pot-pink__0900072_PE687032_S5.webp",
     "ProductTypeId": 1,
-    "ProductBrandId": 4
+    "ProductColorId": 8
   },
   {
-    "Name": "Typescript Entry Board",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
-    "Price": 120,
-    "PictureUrl": "images/products/sb-ts1.png",
+    "Name": "CHIAFRÖN",
+    "Description": "Plant pot, white, 9 cm",
+    "Price": 3.00,
+    "PictureUrl": "images/products/chiafroen-plant-pot-white__0899078_PE725675_S5.webp",
     "ProductTypeId": 1,
-    "ProductBrandId": 5
+    "ProductColorId": 2
   },
   {
-    "Name": "Core Blue Hat",
-    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 10,
-    "PictureUrl": "images/products/hat-core1.png",
+    "Name": "DAIDAI",
+    "Description": "Plant pot, brass-colour, 9 cm",
+    "Price": 1.50,
+    "PictureUrl": "images/products/daidai-plant-pot-brass-colour__0768618_PE754496_S5.webp",
+    "ProductTypeId": 1,
+    "ProductColorId": 12
+  },
+  {
+    "Name": "BITTERGURKA",
+    "Description": "Plant pot, white, 32x15 cm",
+    "Price": 6.00,
+    "PictureUrl": "images/products/bittergurka-plant-pot-white__0748653_PE745118_S5.webp",
+    "ProductTypeId": 1,
+    "ProductColorId": 2
+  },
+  {
+    "Name": "PERSILLADE",
+    "Description": "Plant pot, dark grey, 12 cm",
+    "Price": 2.50,
+    "PictureUrl": "images/products/persillade-plant-pot-dark-grey__0690828_PE723548_S5.webp",
+    "ProductTypeId": 1,
+    "ProductColorId": 1
+  },
+  {
+    "Name": "BOYSENBÄR",
+    "Description": "Plant pot, in/outdoor triangle/white, 12",
+    "Price": 6.00,
+    "PictureUrl": "images/products/boysenbaer-plant-pot-in-outdoor-triangle-white__0862364_PE781237_S5.webp",
+    "ProductTypeId": 1,
+    "ProductColorId": 2
+  },
+  {
+    "Name": "FÖRENLIG",
+    "Description": "Plant pot, in/outdoor white, 9 cm",
+    "Price": 1.00,
+    "PictureUrl": "images/products/foerenlig-plant-pot-in-outdoor-white__0817558_PE774236_S5.webp",
+    "ProductTypeId": 1,
+    "ProductColorId": 2
+  },
+  {
+    "Name": "VALLMOFRÖN",
+    "Description": "Plant pot, seagrass, 24 cm",
+    "Price": 17.00,
+    "PictureUrl": "images/products/vallmofroen-plant-pot-seagrass__0817575_PE774251_S5.webp",
+    "ProductTypeId": 1,
+    "ProductColorId": 3
+  },
+
+  {
+    "Name": "KAMOMILL",
+    "Description": "Plant pot, in/outdoor green, 19 cm",
+    "Price": 12.00,
+    "PictureUrl": "images/products/kamomill-plant-pot-in-outdoor-green__0901447_PE725670_S5.webp",
+    "ProductTypeId": 1,
+    "ProductColorId": 5
+  },
+  {
+    "Name": "RÅGKORN",
+    "Description": "Plant pot, in/outdoor natural, 24 cm",
+    "Price": 19.00,
+    "PictureUrl": "images/products/ragkorn-plant-pot-in-outdoor-natural__0901231_PE625530_S5.webp",
+    "ProductTypeId": 1,
+    "ProductColorId": 3
+  },
+  {
+    "Name": "UPPVAKTA",
+    "Description": "Plant pot, white/natural, 12 cm",
+    "Price": 4.00,
+    "PictureUrl": "images/products/uppvakta-plant-pot-white-natural__0900938_PE725664_S5.jpg",
+    "ProductTypeId": 1,
+    "ProductColorId": 2
+  },
+  {
+    "Name": "VANLIGEN",
+    "Description": "Plant pot, green, 12 cm",
+    "Price": 5.00,
+    "PictureUrl": "images/products/vanligen-plant-pot-green__0797028_PE766681_S5.webp",
+    "ProductTypeId": 1,
+    "ProductColorId": 5
+  },
+  {
+    "Name": "STENBÄR",
+    "Description": "Plant pot, grey, 24 cm",
+    "Price": 15.00,
+    "PictureUrl": "images/products/stenbaer-plant-pot-grey__0900264_PE626285_S5.webp",
+    "ProductTypeId": 1,
+    "ProductColorId": 1
+  },
+  {
+    "Name": "ASKHOLMEN",
+    "Description": "Flower box, light brown stained",
+    "Price": 25.00,
+    "PictureUrl": "images/products/askholmen-flower-box-light-brown-stained__0906726_PE619787_S5.webp",
+    "ProductTypeId": 1,
+    "ProductColorId": 4
+  },
+  {
+    "Name": "BITTERGURKA",
+    "Description": "Hanging planter, white",
+    "Price": 8.00,
+    "PictureUrl": "images/products/bittergurka-hanging-planter-white__0901067_PE687832_S5.webp",
+    "ProductTypeId": 1,
+    "ProductColorId": 2
+  },
+  {
+    "Name": "SPARRISKNOPP",
+    "Description": "Plant pot, light blue, 12 cm",
+    "Price": 4.50,
+    "PictureUrl": "images/products/sparrisknopp-plant-pot-light-blue__0899085_PE725661_S5.jpg",
+    "ProductTypeId": 1,
+    "ProductColorId": 6
+  },
+  {
+    "Name": "SINNESRO",
+    "Description": "Lantern f block candle, in/outdoor, grey, 45 cm",
+    "Price": 15.00,
+    "PictureUrl": "images/products/sinnesro-lantern-f-block-candle-in-outdoor-grey__0903424_PE652191_S5.webp",
     "ProductTypeId": 2,
-    "ProductBrandId": 2
+    "ProductColorId": 11
   },
   {
-    "Name": "Green React Woolen Hat",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 8,
-    "PictureUrl": "images/products/hat-react1.png",
+    "Name": "ROTERA",
+    "Description": "Lantern for tealight, in/outdoor white, 21 cm",
+    "Price": 2.50,
+    "PictureUrl": "images/products/rotera-lantern-for-tealight-in-outdoor-white__0903206_PE586346_S5.webp",
     "ProductTypeId": 2,
-    "ProductBrandId": 4
+    "ProductColorId": 2
   },
   {
-    "Name": "Purple React Woolen Hat",
-    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 15,
-    "PictureUrl": "images/products/hat-react2.png",
+    "Name": "TOPPIG",
+    "Description": "Lantern for block candle, black, 49 cm",
+    "Price": 15.00,
+    "PictureUrl": "images/products/toppig-lantern-for-block-candle-black__0903219_PE606227_S5.webp",
     "ProductTypeId": 2,
-    "ProductBrandId": 4
+    "ProductColorId": 11
   },
   {
-    "Name": "Blue Code Gloves",
-    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
-    "Price": 18,
-    "PictureUrl": "images/products/glove-code1.png",
+    "Name": "ÄDELHET",
+    "Description": "Lantern for tealight, white, 21 cm",
+    "Price": 6.00,
+    "PictureUrl": "images/products/aedelhet-lantern-for-tealight-white__0902999_PE717965_S5.webp",
+    "ProductTypeId": 2,
+    "ProductColorId": 2
+  },
+  {
+    "Name": "VANSKLIG",
+    "Description": "Scented candle in glass, 3 wicks, Lime, basil and mandarin/black",
+    "Price": 7.00,
+    "PictureUrl": "images/products/vansklig-scented-candle-in-glass-3-wicks-lime-basil-and-mandarin-black__0919196_PE786601_S5.webp",
+    "ProductTypeId": 2,
+    "ProductColorId": 11
+  },
+  {
+    "Name": "BLOMDOFT",
+    "Description": "Scented block candle, Gladiolus/grey, 10 cm",
+    "Price": 4.50,
+    "PictureUrl": "images/products/blomdoft-scented-block-candle-gladiolus-grey__0904235_PE670002_S5.webp",
+    "ProductTypeId": 2,
+    "ProductColorId": null
+  },
+  {
+    "Name": "GLITTRIG",
+    "Description": "Candlestick, set of 3, ivory/gold-colour",
+    "Price": 17.00,
+    "PictureUrl": "images/products/glittrig-candlestick-set-of-3-ivory-gold-colour__0902886_PE685232_S5.webp",
+    "ProductTypeId": 2,
+    "ProductColorId": 12
+  },
+  {
+    "Name": "VINDFLÄKT",
+    "Description": "Tealight holder, gold-colour, 24 cm",
+    "Price": 10.00,
+    "PictureUrl": "images/products/vindflaekt-tealight-holder-gold-colour__0903361_PE707422_S5.webp",
+    "ProductTypeId": 2,
+    "ProductColorId": 12
+  },
+  {
+    "Name": "ENRUM",
+    "Description": "Lantern for tealight, in/outdoor, black, 22 cm",
+    "Price": 3.00,
+    "PictureUrl": "images/products/enrum-lantern-for-tealight-in-outdoor-black__0820348_PE775002_S5.webp",
+    "ProductTypeId": 2,
+    "ProductColorId": 11
+  },
+  {
+    "Name": "SINNLIG",
+    "Description": "Scented block candle, Red garden berries/red, 14 cm",
+    "Price": 1.75,
+    "PictureUrl": "images/products/sinnlig-scented-block-candle-red-garden-berries-red__0902998_PE630338_S5.webp",
+    "ProductTypeId": 2,
+    "ProductColorId": 10
+  },
+  {
+    "Name": "BEHÄRSKA",
+    "Description": "Lantern for block candle, white, 26 cm",
+    "Price": 3.00,
+    "PictureUrl": "images/products/behaerska-lantern-for-block-candle-white__0903534_PE725389_S5.webp",
+    "ProductTypeId": 2,
+    "ProductColorId": 2
+  },
+  {
+    "Name": "FOG",
+    "Description": "Picture, set of 9, blue landscape, 179x112 cm",
+    "Price": 55.00,
+    "PictureUrl": "images/products/groenby-picture-set-of-9-blue-landscape__0736633_PE740678_S5.webp",
+    "ProductTypeId": 3,
+    "ProductColorId": null
+  },
+  {
+    "Name": "LAKE",
+    "Description": "Picture with frame, Sunrise in Montana/aluminium-colour, 200x140 cm",
+    "Price": 65.00,
+    "PictureUrl": "images/products/bjoerksta-picture-with-frame-sunrise-in-montana-aluminium-colour__0930136_PE790611_S5.webp",
+    "ProductTypeId": 3,
+    "ProductColorId": null
+  },
+  {
+    "Name": "VINTAGE MAP",
+    "Description": "Picture with frame, Historical map, 1881/black, 200x140 cm",
+    "Price": 65.00,
+    "PictureUrl": "images/products/bjoerksta-picture-with-frame-historical-map-1881-black__0932329_PE791412_S5.webp",
+    "ProductTypeId": 3,
+    "ProductColorId": null
+  },
+  {
+    "Name": "COLORFUL",
+    "Description": "Picture with frame, Mischka/aluminium-colour, 140x100 cm",
+    "Price": 50.00,
+    "PictureUrl": "images/products/bjoerksta-picture-with-frame-mischka-aluminium-colour__0932432_PE791455_S5.jpg",
+    "ProductTypeId": 3,
+    "ProductColorId": null
+  },
+  {
+    "Name": "PASTEL",
+    "Description": "Picture, Pictures in my head/polystyrene plastic, 70x50 cm",
+    "Price": 35.00,
+    "PictureUrl": "images/products/katebo-picture-pictures-in-my-head-polystyrene-plastic__0948635_PE799162_S5.webp",
+    "ProductTypeId": 3,
+    "ProductColorId": null
+  },
+  {
+    "Name": "NYC",
+    "Description": "Picture with frame, Winter morning in NYC/aluminium-colour, 200x140 cm",
+    "Price": 65.00,
+    "PictureUrl": "images/products/bjoerksta-picture-with-frame-winter-morning-in-nyc-aluminium-colour__0930137_PE790612_S5.webp",
+    "ProductTypeId": 3,
+    "ProductColorId": null
+  },
+  {
+    "Name": "FLOWERS",
+    "Description": "Picture with frame, Pink peony/black, 140x56 cm",
+    "Price": 37.00,
+    "PictureUrl": "images/products/bjoerksta-picture-with-frame-pink-peony-black__0729921_PE737267_S5.webp",
+    "ProductTypeId": 3,
+    "ProductColorId": null
+  },
+  {
+    "Name": "EIFFEL TOWER",
+    "Description": "Picture with frame, Eiffel tower/aluminium-colour, 140x100 cm",
+    "Price": 50.00,
+    "PictureUrl": "images/products/bjoerksta-picture-with-frame-eiffel-tower-aluminium-colour__0932072_PE791384_S5.jpg",
+    "ProductTypeId": 3,
+    "ProductColorId": null
+  },
+  {
+    "Name": "LÖNSÅS",
+    "Description": "Mirror, 21x30 cm",
+    "Price": 1.00,
+    "PictureUrl": "images/products/loensas-mirror__0898262_PE782489_S5.webp",
     "ProductTypeId": 4,
-    "ProductBrandId": 3
+    "ProductColorId": 11
   },
   {
-    "Name": "Green Code Gloves",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 15,
-    "PictureUrl": "images/products/glove-code2.png",
+    "Name": "TOFTBYN",
+    "Description": "Decorate kit 11",
+    "Price": 69.00,
+    "PictureUrl": "images/products/toftbyn-decorate-kit-11__0946812_PH172760_S5.webp",
     "ProductTypeId": 4,
-    "ProductBrandId": 3
+    "ProductColorId": 11
   },
   {
-    "Name": "Purple React Gloves",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.",
-    "Price": 16,
-    "PictureUrl": "images/products/glove-react1.png",
+    "Name": "STOCKHOLM",
+    "Description": "Mirror, walnut veneer, 60 cm",
+    "Price": 45.00,
+    "PictureUrl": "images/products/stockholm-mirror-walnut-veneer__0906306_PE658294_S5.jpg",
     "ProductTypeId": 4,
-    "ProductBrandId": 4
+    "ProductColorId": 4
   },
   {
-    "Name": "Green React Gloves",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 14,
-    "PictureUrl": "images/products/glove-react2.png",
+    "Name": "LASSBYN",
+    "Description": "Table mirror, gold-colour, 17 cm",
+    "Price": 8.00,
+    "PictureUrl": "images/products/lassbyn-table-mirror-gold-colour__0893487_PE782333_S5.webp",
     "ProductTypeId": 4,
-    "ProductBrandId": 4
+    "ProductColorId": 12
   },
   {
-    "Name": "Redis Red Boots",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 250,
-    "PictureUrl": "images/products/boot-redis1.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 6
+    "Name": "KNAPPER",
+    "Description": "Standing mirror, white, 48x160 cm",
+    "Price": 45.00,
+    "PictureUrl": "images/products/knapper-standing-mirror-white__0858698_PE676200_S5.webp",
+    "ProductTypeId": 4,
+    "ProductColorId": 2
   },
   {
-    "Name": "Core Red Boots",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 189.99,
-    "PictureUrl": "images/products/boot-core2.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 2
+    "Name": "IKORNNES",
+    "Description": "Table mirror, ash, 27x40 cm",
+    "Price": 20.00,
+    "PictureUrl": "images/products/ikornnes-table-mirror-ash__0905984_PE552275_S5.webp",
+    "ProductTypeId": 4,
+    "ProductColorId": 4
   },
   {
-    "Name": "Core Purple Boots",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 199.99,
-    "PictureUrl": "images/products/boot-core1.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 2
+    "Name": "LIHOLEN",
+    "Description": "Mirror, set of 2, pink/aspen",
+    "Price": 12.00,
+    "PictureUrl": "images/products/liholen-mirror-set-of-2-pink-aspen__0808659_PE770803_S5.webp",
+    "ProductTypeId": 4,
+    "ProductColorId": null
   },
   {
-    "Name": "Angular Purple Boots",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
-    "Price": 150,
-    "PictureUrl": "images/products/boot-ang2.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 1
+    "Name": "LIHOLEN",
+    "Description": "Mirror, set of 2, pink/aspen",
+    "Price": 12.00,
+    "PictureUrl": "images/products/liholen-mirror-set-of-2-pink-aspen__0808659_PE770803_S5.webp",
+    "ProductTypeId": 4,
+    "ProductColorId": null
   },
   {
-    "Name": "Angular Blue Boots",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 180,
-    "PictureUrl": "images/products/boot-ang1.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 1
+    "Name": "VANLIGEN",
+    "Description": "Vase/jug, blue, 26 cm",
+    "Price": 17.00,
+    "PictureUrl": "images/products/vanligen-vase-jug-blue__0797966_PE767255_S5.webp",
+    "ProductTypeId": 5,
+    "ProductColorId": 6
+  },
+  {
+    "Name": "PEPPARKORN",
+    "Description": "Vase, grey, 17 cm",
+    "Price": 6.00,
+    "PictureUrl": "images/products/pepparkorn-vase-grey__0903320_PE669997_S5.webp",
+    "ProductTypeId": 5,
+    "ProductColorId": 1
+  },
+  {
+    "Name": "GODTAGBAR",
+    "Description": "Vase, ceramic white/blue, 14 cm",
+    "Price": 4.00,
+    "PictureUrl": "images/products/godtagbar-vase-ceramic-white-blue__0749278_PE745646_S5.webp",
+    "ProductTypeId": 5,
+    "ProductColorId": 2
+  },
+  {
+    "Name": "VANLIGEN",
+    "Description": "Vase, grey, 18 cm",
+    "Price": 8.00,
+    "PictureUrl": "images/products/vanligen-vase-grey__0797963_PE767277_S5.webp",
+    "ProductTypeId": 5,
+    "ProductColorId": 1
+  },
+  {
+    "Name": "KAFFEBÖNA",
+    "Description": "Decoration vase, bamboo,45 cm",
+    "Price": 19.00,
+    "PictureUrl": "images/products/kaffeboena-decoration-vase-bamboo__0725018_PE734902_S5.webp",
+    "ProductTypeId": 5,
+    "ProductColorId": 3
+  },
+  {
+    "Name": "HULTET",
+    "Description": "Dish, bamboo, 30 cm",
+    "Price": 5.00,
+    "PictureUrl": "images/products/hultet-dish-bamboo__0903308_PE584673_S5.webp",
+    "ProductTypeId": 5,
+    "ProductColorId": 3
+  },
+  {
+    "Name": "LIVSLÅNG",
+    "Description": "Vase, green, 20 cm",
+    "Price": 6.00,
+    "PictureUrl": "images/products/livslang-vase-green__0904389_PE644712_S5.webp",
+    "ProductTypeId": 5,
+    "ProductColorId": 5
+  },
+  {
+    "Name": "KRINGGÅ",
+    "Description": "Vase, set of 4, white",
+    "Price": 12.00,
+    "PictureUrl": "images/products/kringga-vase-set-of-4-white__0916133_PE784993_S5.webp",
+    "ProductTypeId": 5,
+    "ProductColorId": 2
+  },
+  {
+    "Name": "ROTBLÖTA",
+    "Description": "Wall clock, ash veneer/light grey, 42 cm",
+    "Price": 25.00,
+    "PictureUrl": "images/products/rotbloeta-wall-clock-ash-veneer-light-grey__0752493_PE747444_S5.jpg",
+    "ProductTypeId": 6,
+    "ProductColorId": 3
+  },
+  {
+    "Name": "MALLHOPPA",
+    "Description": "Wall clock, silver-colour, 35 cm",
+    "Price": 15.00,
+    "PictureUrl": "images/products/mallhoppa-wall-clock-silver-colour__0946322_PE798062_S5.webp",
+    "ProductTypeId": 6,
+    "ProductColorId": 1
+  },
+  {
+    "Name": "SNIFFA",
+    "Description": "Clock, red, 9x15 cm",
+    "Price": 7.00,
+    "PictureUrl": "images/products/sniffa-clock-red__0945387_PE797639_S5.webp",
+    "ProductTypeId": 6,
+    "ProductColorId": 10
+  },
+  {
+    "Name": "GÄNGA",
+    "Description": "Alarm clock, brass-colour, 13 cm",
+    "Price": 15.00,
+    "PictureUrl": "images/products/gaenga-alarm-clock-brass-colour__0661140_PE711347_S5.jpg",
+    "ProductTypeId": 6,
+    "ProductColorId": 12
+  },
+  {
+    "Name": "LINDRANDE",
+    "Description": "Decoration box, pyramid black, 20x20x27 cm",
+    "Price": 15.00,
+    "PictureUrl": "images/products/lindrande-decoration-box-pyramid-black__0903421_PE717813_S5.webp",
+    "ProductTypeId": 7,
+    "ProductColorId": 11
+  },
+  {
+    "Name": "HÄRLIGA",
+    "Description": "Glass dome with base, clear glass, 27 cm",
+    "Price": 15.00,
+    "PictureUrl": "images/products/haerliga-glass-dome-with-base-clear-glass__0903993_PE595244_S5.webp",
+    "ProductTypeId": 7,
+    "ProductColorId": null
+  },
+  {
+    "Name": "LINDRANDE",
+    "Description": "Decoration, cage black, 28 cm",
+    "Price": 19.00,
+    "PictureUrl": "images/products/lindrande-decoration-cage-black__0904739_PE716531_S5.webp",
+    "ProductTypeId": 7,
+    "ProductColorId": 11
+  },
+  {
+    "Name": "MARKNIVÅ",
+    "Description": "Decoration, heart brass-colour, 12 cm",
+    "Price": 6.00,
+    "PictureUrl": "images/products/markniva-decoration-heart-brass-colour__0801576_PE768228_S5.webp",
+    "ProductTypeId": 7,
+    "ProductColorId": 12
+  },
+  {
+    "Name": "TONAD",
+    "Description": "Decoration set of 3, owl/grey",
+    "Price": 10.00,
+    "PictureUrl": "images/products/tonad-decoration-set-of-3-owl-grey__0797945_PE767260_S5.webp",
+    "ProductTypeId": 7,
+    "ProductColorId": 1
+  },
+  {
+    "Name": "MARKNIVÅ",
+    "Description": "Decoration, plum brass-colour, 12 cm",
+    "Price": 10.00,
+    "PictureUrl": "images/products/markniva-decoration-plum-brass-colour__0801658_PE768263_S5 (1).webp",
+    "ProductTypeId": 7,
+    "ProductColorId": 12
   }
 ]
